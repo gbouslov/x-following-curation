@@ -1,0 +1,28 @@
+{
+  "account": {"id": "100", "handle": "reader_demo"},
+  "following": [
+    {"id": "201", "handle": "operator_demo"},
+    {"id": "202", "handle": "noise_demo"},
+    {"id": "203", "handle": "contact_demo"}
+  ],
+  "classification": [
+    {"id": "201", "handle": "operator_demo", "decision": "keep", "reason": "The two invented delivery retrospectives address repeatable implementation.", "scores": [3, 3, 3, 2], "post_ids": ["p1", "p2"]},
+    {"id": "202", "handle": "noise_demo", "decision": "unfollow", "reason": "The invented sample consists of trading commentary outside all three work questions.", "scores": [0, 1, 1, 0], "post_ids": ["p3", "p4"]},
+    {"id": "203", "handle": "contact_demo", "decision": "review", "reason": "Pinned contact; sparse sample is not a reason to remove a personal relationship.", "scores": [0, 0, 0, 1], "post_ids": [], "exception": "pinned contact"}
+  ],
+  "discovery": [
+    {"id": "204", "handle": "diligence_demo", "recommendation": "follow", "pool": "fictional topic search", "reason": "The invented diligence checklist directly answers acquisition question two.", "scores": [3, 3, 2, 3], "post_ids": ["p5", "p6"]}
+  ],
+  "posts": [
+    {"id": "p1", "author_id": "201", "text": "Fictional: record delivery hours per workflow, then compare support hours after deployment.", "url": "https://example.invalid/posts/p1"},
+    {"id": "p2", "author_id": "201", "text": "Fictional: our second project reused evaluations and integrations; buyer data access still needed a new agreement.", "url": "https://example.invalid/posts/p2"},
+    {"id": "p3", "author_id": "202", "text": "Fictional: short-term trading commentary.", "url": "https://example.invalid/posts/p3"},
+    {"id": "p4", "author_id": "202", "text": "Fictional: another speculative market call unrelated to enterprise delivery.", "url": "https://example.invalid/posts/p4"},
+    {"id": "p5", "author_id": "204", "text": "Fictional: in services diligence, separate owner-led revenue from transferable contracts.", "url": "https://example.invalid/posts/p5"},
+    {"id": "p6", "author_id": "204", "text": "Fictional: inspect customer concentration and renewal responsibilities before modeling integration savings.", "url": "https://example.invalid/posts/p6"}
+  ],
+  "approved_actions": [
+    {"target_id": "202", "handle": "noise_demo", "action": "unfollow", "before_following": true, "reason": "The fictional representative sample is unrelated to the work questions."},
+    {"target_id": "204", "handle": "diligence_demo", "action": "follow", "before_following": false, "reason": "The fictional acquisition examples answer the second decision question."}
+  ]
+}
